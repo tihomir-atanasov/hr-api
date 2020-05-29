@@ -20,7 +20,7 @@ WORKDIR /api
 COPY --from=build /api ./
 
 # Normal Entrypoint
-ENTRYPOINT ["dotnet", "Demo.HR.API.dll"]
+# ENTRYPOINT ["dotnet", "Demo.HR.API.dll"]
 
 # Heroku Entrypoint
-# CMD ASPNETCORE_URLS=http://*:$PORT dotnet Demo.HR.API.dll
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet Demo.HR.API.dll
