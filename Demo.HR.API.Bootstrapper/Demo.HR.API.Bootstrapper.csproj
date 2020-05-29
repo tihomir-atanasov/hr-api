@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<CodeAnalysisRuleSet>..\CSharpStyleguide.ruleset</CodeAnalysisRuleSet>
+	<AssemblyName>Demo.HR.API.Bootstrapper</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.5.0" />
+    <PackageReference Include="NSwag.Core" Version="13.5.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo.HR.Contracts.Repositories\Demo.HR.Contracts.Repositories.csproj" />
+    <ProjectReference Include="..\Demo.HR.Contracts.Services\Demo.HR.Contracts.Services.csproj" />
+    <ProjectReference Include="..\Demo.HR.Models.Common\Demo.HR.Models.Common.csproj" />
+    <ProjectReference Include="..\Demo.HR.Models.Db\Demo.HR.Models.Db.csproj" />
+    <ProjectReference Include="..\Demo.HR.Models.Dtos\Demo.HR.Models.Dtos.csproj" />
+    <ProjectReference Include="..\Demo.HR.Repositories\Demo.HR.Repositories.csproj" />
+    <ProjectReference Include="..\Demo.HR.Services\Demo.HR.Services.csproj" />
+  </ItemGroup>
+
+</Project>
